@@ -1,6 +1,222 @@
 $darkViolet: #24054e;
 $neonGreen: #44ffa1;
-$lightViolet: #584D62;
-$palmViolet: #fcf8ff;
-$white: #FFF;
+$lightViolet: #584d62;
+$paleViolet: #fcf8ff;
+$white: #fff;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@mixin underline{
+    position: absolute;
+    content:'';
+    height: 3px;
+    width: 100%;
+    background-color: $neonGreen;
+}
+@mixin button{
+    margin-top: 1em;
+    align-self: center;
+    padding: 1em 2em;
+    font-family: 'Manrope', 'sans-serif';
+    font-weight: 700;
+    border: none;
+    background-color: $neonGreen;
+}
+body{
+    background-color: $white;
+    z-index: 0;
+}
+.header-background{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    background-color: $paleViolet;
+    .header-curve{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        height: 400px;
+        width: 200%;
+        background-color: $darkViolet;
+        border-radius: 50%;
+        left: -50%;
+        top: -10%;
+        .header{
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            .header-top{
+                margin: 2em 1em 0;
+                height: 20%;
+                width: 100%;
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+                .header-sign{
+                    position: relative;
+                    color: $white;
+                    font-family: 'Manrope', sans-serif ;
+                    margin-right: 2em;
+                }
+                .header-sign::before{
+                    @include underline;
+                    bottom: -4px;
+                }
+            }
+            .header-title{
+                color:$white;
+                text-align: center;
+                font-size: 2.5rem;
+                font-size: 'Fraunces', 'sans-serif';
+                font-weight: 500;
+                margin-top: .5em;
+                .decorated-span{
+                    position: relative;
+                }
+                .decorated-span::before{
+                    @include underline;
+                    bottom:0;
+                }
+        }
+        .learn-more{
+            @include button;
+        }
+    }
+    .hero-img{
+        position: absolute;
+        width: 250px;
+        bottom: -70px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+}
+.services-background{
+    position: relative;
+    height: 500px;
+    background-color: $paleViolet;
+    display: flex;
+    justify-content: center;
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 200%;
+        height: 700px;
+        border-radius: 50%;
+        background-color: $paleViolet;
+        .card-boxes{
+            margin: 0 1em;
+            width: 100vw;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            .card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 1em;
+                .card-number{
+                    line-height: 3rem;
+                    text-align: center;
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    border: 1px solid $darkViolet;
+                    border-radius: 50%;
+                    font-family: 'Fraunces';
+                    font-weight: 500;
+                    font-size: 1.3rem;
+                    margin-bottom: 1em; 
+                }
+                .card-title{
+                    font-family: 'Fraunces';
+                    font-weight: 500;
+                    margin-bottom: 1em;
+                }
+                .card-text{
+                    text-align: center;
+                    font-family: 'Manrope';
+                    font-size: .8rem;
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+.about{
+    margin-top: 25em;
+    width: 100vw;
+    display: flex;
+    .about-box{
+        height: 400px;
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 1em;
+        img{
+            position: absolute;
+            top: -120px;
+            width: 220px;
+            z-index: -1;
+        }
+        .text-box{
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1em 2em;
+            background-color: $darkViolet;
+            .box-title{
+                color: $white;
+                font-family: 'Fraunces', 'sans-serif';
+                font-weight: 500;
+                margin-bottom: 1em;
+            }
+            .description{
+                text-align: center;
+                color: $white;
+                font-family: 'Manrope', 'sans-serif';
+                font-size: .9rem;
+                line-height: 1.5em;
+            }
+            .box-button{
+                @include button;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        margin-bottom: 2em;
+    }
+    .social-box{
+        display: flex;
+        justify-content: space-between;
+        width: 124px;
+    }
+}
 

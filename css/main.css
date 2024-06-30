@@ -1,1 +1,219 @@
-/*# sourceMappingURL=main.css.map */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  z-index: 0;
+}
+
+.header-background {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fcf8ff;
+}
+.header-background .header-curve {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 400px;
+  width: 200%;
+  background-color: #24054e;
+  border-radius: 50%;
+  left: -50%;
+  top: -10%;
+}
+.header-background .header-curve .header {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.header-background .header-curve .header .header-top {
+  margin: 2em 1em 0;
+  height: 20%;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.header-background .header-curve .header .header-top .header-sign {
+  position: relative;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  margin-right: 2em;
+}
+.header-background .header-curve .header .header-top .header-sign::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: #44ffa1;
+  bottom: -4px;
+}
+.header-background .header-curve .header .header-title {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+  font-size: "Fraunces", "sans-serif";
+  font-weight: 500;
+  margin-top: 0.5em;
+}
+.header-background .header-curve .header .header-title .decorated-span {
+  position: relative;
+}
+.header-background .header-curve .header .header-title .decorated-span::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: #44ffa1;
+  bottom: 0;
+}
+.header-background .header-curve .header .learn-more {
+  margin-top: 1em;
+  align-self: center;
+  padding: 1em 2em;
+  font-family: "Manrope", "sans-serif";
+  font-weight: 700;
+  border: none;
+  background-color: #44ffa1;
+}
+.header-background .header-curve .hero-img {
+  position: absolute;
+  width: 250px;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.services-background {
+  position: relative;
+  height: 500px;
+  background-color: #fcf8ff;
+  display: flex;
+  justify-content: center;
+}
+.services-background .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 200%;
+  height: 700px;
+  border-radius: 50%;
+  background-color: #fcf8ff;
+}
+.services-background .wrapper .card-boxes {
+  margin: 0 1em;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.services-background .wrapper .card-boxes .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+.services-background .wrapper .card-boxes .card .card-number {
+  line-height: 3rem;
+  text-align: center;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #24054e;
+  border-radius: 50%;
+  font-family: "Fraunces";
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 1em;
+}
+.services-background .wrapper .card-boxes .card .card-title {
+  font-family: "Fraunces";
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+.services-background .wrapper .card-boxes .card .card-text {
+  text-align: center;
+  font-family: "Manrope";
+  font-size: 0.8rem;
+  margin-bottom: 1em;
+}
+
+.about {
+  margin-top: 25em;
+  width: 100vw;
+  display: flex;
+}
+.about .about-box {
+  height: 400px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1em;
+}
+.about .about-box img {
+  position: absolute;
+  top: -120px;
+  width: 220px;
+  z-index: -1;
+}
+.about .about-box .text-box {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 2em;
+  background-color: #24054e;
+}
+.about .about-box .text-box .box-title {
+  color: #fff;
+  font-family: "Fraunces", "sans-serif";
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+.about .about-box .text-box .description {
+  text-align: center;
+  color: #fff;
+  font-family: "Manrope", "sans-serif";
+  font-size: 0.9rem;
+  line-height: 1.5em;
+}
+.about .about-box .text-box .box-button {
+  margin-top: 1em;
+  align-self: center;
+  padding: 1em 2em;
+  font-family: "Manrope", "sans-serif";
+  font-weight: 700;
+  border: none;
+  background-color: #44ffa1;
+  margin-bottom: 1em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer img {
+  margin-bottom: 2em;
+}
+.footer .social-box {
+  display: flex;
+  justify-content: space-between;
+  width: 124px;
+}/*# sourceMappingURL=main.css.map */
