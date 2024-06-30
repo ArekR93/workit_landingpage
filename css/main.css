@@ -29,6 +29,9 @@ body {
   left: -50%;
   top: -10%;
 }
+.header-background .header-curve .header-pattern {
+  display: none;
+}
 .header-background .header-curve .header {
   display: flex;
   flex-direction: column;
@@ -92,6 +95,10 @@ body {
   transform: translateX(-50%);
 }
 
+main {
+  overflow: hidden;
+}
+
 .services-background {
   position: relative;
   height: 500px;
@@ -123,6 +130,16 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 1em;
+}
+.services-background .wrapper .card-boxes .card .mesh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services-background .wrapper .card-boxes .card .mesh .mesh-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .services-background .wrapper .card-boxes .card .card-number {
   line-height: 3rem;
@@ -170,6 +187,9 @@ body {
   width: 220px;
   z-index: -1;
 }
+.about .about-box .text-box-pattern {
+  display: none;
+}
 .about .about-box .text-box {
   margin-bottom: 0;
   display: flex;
@@ -203,6 +223,10 @@ body {
   margin-bottom: 1em;
 }
 
+.text-box-pattern {
+  display: none;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -216,4 +240,324 @@ body {
   display: flex;
   justify-content: space-between;
   width: 124px;
+}
+
+@media (min-width: 768px) {
+  .header-background {
+    position: relative;
+    height: 800px;
+  }
+  .header-background .header-curve {
+    height: 700px;
+  }
+  .header-background .header-curve .header-pattern {
+    display: block;
+    position: absolute;
+  }
+  .header-background .header-curve .left {
+    top: 200px;
+    left: 15%;
+  }
+  .header-background .header-curve .right {
+    top: 400px;
+    right: 17%;
+  }
+  .header-background .header-curve .header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .header-background .header-curve .header .header-top {
+    margin: 3em 1em;
+    padding: 2em;
+    margin-bottom: 0;
+  }
+  .header-background .header-curve .header .header-top .header-sign {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .header-background .header-curve .header .header-title {
+    font-size: 4rem;
+    align-self: center;
+    width: 400px;
+  }
+  .header-background .header-curve .header .header-title .decorated-span::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #44ffa1;
+    bottom: 0;
+    left: 10px;
+  }
+  .header-background .header-curve .header .learn-more {
+    margin-top: 1em;
+    align-self: center;
+    padding: 1em 2em;
+    font-family: "Manrope", "sans-serif";
+    font-weight: 700;
+    border: none;
+    background-color: #44ffa1;
+    margin-top: 3em;
+    font-size: 1.2em;
+  }
+  .header-background .header-curve .hero-img {
+    position: absolute;
+    width: 550px;
+    bottom: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .services-background {
+    height: 400px;
+  }
+  .services-background .wrapper {
+    height: 600px;
+  }
+  .services-background .wrapper .card-boxes .card {
+    flex-direction: row;
+  }
+  .services-background .wrapper .card-boxes .card .mesh {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .services-background .wrapper .card-boxes .card .mesh .card-number {
+    line-height: 3.5rem;
+    margin-top: 0.5em;
+    margin-right: 2em;
+    width: 70px;
+    height: 60px;
+    border: 1px solid #24054e;
+    font-size: 1.3rem;
+  }
+  .services-background .wrapper .card-boxes .card .mesh .mesh-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .services-background .wrapper .card-boxes .card .mesh .mesh-text .card-title {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+  }
+  .services-background .wrapper .card-boxes .card .mesh .mesh-text .card-text {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: left;
+  }
+  .about .about-box {
+    margin: 2em;
+  }
+  .about .about-box img {
+    top: -130px;
+    left: 20px;
+    width: 320px;
+  }
+  .about .about-box .text-box {
+    position: relative;
+    width: 70%;
+    align-self: flex-end;
+    padding: 2em 3em;
+    align-items: start;
+  }
+  .about .about-box .text-box .box-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+  }
+  .about .about-box .text-box .description {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 2em;
+  }
+  .about .about-box .text-box .box-button {
+    margin-bottom: 1em;
+    align-self: flex-start;
+    font-size: 1rem;
+  }
+  .text-box-pattern {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    width: 250px;
+    right: 50px;
+    bottom: -1100px;
+  }
+  .footer {
+    margin-top: 2em;
+  }
+  .footer img {
+    width: 150px;
+    margin-bottom: 2em;
+  }
+  .footer .social-box {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+  }
+  .footer .social-box img {
+    width: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .header-background {
+    position: relative;
+    height: 900px;
+  }
+  .header-background .header-curve {
+    height: 700px;
+  }
+  .header-background .header-curve .header-pattern {
+    display: block;
+    position: absolute;
+  }
+  .header-background .header-curve .left {
+    top: 200px;
+    left: 22%;
+  }
+  .header-background .header-curve .right {
+    top: 400px;
+    right: 22%;
+  }
+  .header-background .header-curve .header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .header-background .header-curve .header .header-top {
+    margin: 3em 1em;
+    padding: 2em;
+    margin-bottom: 0;
+  }
+  .header-background .header-curve .header .header-top .header-sign {
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.5s;
+    cursor: pointer;
+  }
+  .header-background .header-curve .header .header-top .header-sign:hover {
+    color: #44ffa1;
+  }
+  .header-background .header-curve .header .header-title {
+    font-size: 4rem;
+    align-self: center;
+    width: 400px;
+  }
+  .header-background .header-curve .header .header-title .decorated-span::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #44ffa1;
+    bottom: 0;
+    left: 10px;
+  }
+  .header-background .header-curve .header .learn-more {
+    margin-top: 1em;
+    align-self: center;
+    padding: 1em 2em;
+    font-family: "Manrope", "sans-serif";
+    font-weight: 700;
+    border: none;
+    background-color: #44ffa1;
+    margin-top: 3em;
+    font-size: 1.2em;
+    border: 2px solid #44ffa1;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+    cursor: pointer;
+  }
+  .header-background .header-curve .header .learn-more:hover {
+    background-color: transparent;
+    color: #44ffa1;
+  }
+  .header-background .header-curve .hero-img {
+    position: absolute;
+    width: 550px;
+    bottom: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .services-background {
+    height: 400px;
+  }
+  .services-background .wrapper {
+    margin-top: -8em;
+    height: 600px;
+  }
+  .services-background .wrapper .card-boxes {
+    flex-direction: row;
+  }
+  .services-background .wrapper .card-boxes .card {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .services-background .wrapper .card-boxes .card .mesh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services-background .wrapper .card-boxes .card .mesh .card-number {
+    line-height: 4rem;
+    width: 70px;
+    height: 70px;
+  }
+  .services-background .wrapper .card-boxes .card .mesh .mesh-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services-background .wrapper .card-boxes .card .mesh .mesh-text .card-title {
+    font-size: 2rem;
+  }
+  .services-background .wrapper .card-boxes .card .mesh .mesh-text .card-text {
+    text-align: center;
+  }
+  .about .about-box {
+    margin: 2em;
+  }
+  .about .about-box img {
+    top: -220px;
+    left: 8%;
+    width: 470px;
+  }
+  .about .about-box .text-box {
+    position: relative;
+    width: 60%;
+    align-self: flex-end;
+    padding: 2em 3em;
+    align-items: start;
+    margin-right: 2em;
+  }
+  .about .about-box .text-box .box-title {
+    font-size: 3rem;
+    margin-bottom: 1em;
+  }
+  .about .about-box .text-box .description {
+    text-align: left;
+    font-size: 1.4rem;
+  }
+  .about .about-box .text-box .box-button {
+    margin-bottom: 2em;
+    align-self: flex-start;
+    font-size: 1rem;
+    border: 2px solid #44ffa1;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+    cursor: pointer;
+  }
+  .about .about-box .text-box .box-button:hover {
+    background-color: transparent;
+    color: #44ffa1;
+  }
+  .footer .social-box {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+  }
+  .footer .social-box img {
+    width: 50px;
+    transition: color 0.5s;
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=main.css.map */
